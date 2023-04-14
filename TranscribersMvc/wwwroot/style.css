@@ -1,0 +1,82 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Cascadia Code';
+    background: linear-gradient(#141e30, #243b55);
+    color: white;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    color: hotpink;
+}
+
+
+    .login-box .user-box {
+        position: relative;
+    }
+
+textarea {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    background-color: #141e30;
+}
+
+
+.login-box form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    background-color: #03e9f4;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-top: 5px;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-family: 'Cascadia Code';
+}
+
+.login-box button:hover {
+    background: aqua;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.output {
+    color: #fff;
+    background-color: #141e30;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 30px;
+}
+
+p {
+    color: hotpink;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}

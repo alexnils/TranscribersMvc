@@ -1,0 +1,47 @@
+﻿@model IndexVM
+@{
+    ViewBag.Title = "Transcriber";
+}
+
+<div class="user-box"> 
+
+<form asp-controller="Transcribers" asp-action="Index">
+    <label asp-for="InputText"></label>
+    <textarea asp-for="InputText"> </textarea>
+    <span asp-validation-for="InputText"></span>
+
+		<label asp-for="SelectedLanguage"></label>
+		<div>
+			@foreach (var item in Model.LanguagesList)
+			{
+				<label>
+
+				<input asp-for="SelectedLanguage" type="radio" value="@item" checked /> @item
+
+                </label>
+                
+			}
+            <span asp-validation-for="SelectedLanguage"></span>
+
+           </div>
+              
+            
+    <button>Transcribe into Latin</button>
+
+
+</form>
+
+
+<p>Transcription:</p>
+<div class="output">
+
+    
+    
+    @{if (Model != null)
+    {
+    @Model.OutputText
+        
+    }}
+        
+</div>
+</div>
